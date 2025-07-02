@@ -43,6 +43,7 @@ export default function OneView() {
               <Button
                 variant='contained'
                 color='primary'
+                onClick={() => navigate(`/dashboard/two`)}
               >
                 Go Generate!
               </Button>
@@ -105,7 +106,7 @@ export default function OneView() {
                 variant='contained'
                 color='primary'
                 startIcon={button.icon}
-                onClick={() => navigate(`/${button.path}`)} // Add your navigation logic here
+                onClick={() => navigate(`/${button.path}`)}
                 sx={{
                   height: '15vh',
                   justifyContent: 'center',
